@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web3-transaction</title>
+</head>
+<body>
+<table style=" width: 100%; border: 4px double black;">
+    <tr>
+        <td style="border: 1px solid black; text-align: center">
+            <a href="/registration">Registration</a>
+        </td>
+    </tr>
+</table>
+
+<form action="/transaction" method="POST">
+    <label for="senderName">senderName
+        <input  type="text" id="senderName" name="senderName">
+    </label>
+    <label for="senderPass">senderPass
+        <input type="password" id="senderPass" name="senderPass">
+    </label>
+    <label for="count">count
+        <input type="text" id="count" name="count">
+    </label>
+    <label for="nameTo">nameTo
+        <input type="text" id="nameTo" name="nameTo">
+    </label>
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>

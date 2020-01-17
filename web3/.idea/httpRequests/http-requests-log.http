@@ -1,0 +1,62 @@
+POST http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+sendName: nk
+sendPass: 123
+count: 100
+toName: nk2
+
+<> 2020-01-16T095849.500.html
+
+###
+
+POST http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+sendName: nk
+sendPass: 123
+count: 100
+toName: nk2
+
+###
+
+POST http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+sendName: nk
+sendPass: 123
+count: 100
+toName: nk2
+
+<> 2020-01-16T095653.500.html
+
+###
+
+POST http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+sendName: nk
+sendPass: 123
+count: 100
+toName: nk2
+
+<> 2020-01-16T095641.500.html
+
+###
+
+POST http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-01-16T095418.500.html
+
+###
+
+GET http://localhost:8080/transaction
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-01-16T095348.200.html
+
+###
+
