@@ -1,10 +1,26 @@
 package model;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "cars")
 public class Car {
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return Objects.equals(brand, car.brand) &&
+                Objects.equals(model, car.model) &&
+                Objects.equals(licensePlate, car.licensePlate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, model, licensePlate);
+    }
 
     @Id
     @Column(name = "id")

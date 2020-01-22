@@ -1,6 +1,7 @@
 package util;
 
 import model.Car;
+import model.DailyReport;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,7 +26,7 @@ public class DBHelper {
         return sessionFactory;
     }
 
-    @SuppressWarnings("UnusedDeclaration")
+
     private static Configuration getMySqlConfiguration() {
         Configuration configuration = new Configuration();
         configuration.addAnnotatedClass(Car.class);
@@ -39,9 +40,25 @@ public class DBHelper {
         configuration.setProperty("hibernate.hbm2ddl.auto", "create");
         return configuration;
     }
+    @SuppressWarnings("UnusedDeclaration")
+    private static Configuration getPostgreSqlConfiguration() {
+        Configuration configuration = new Configuration();
+
+        configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+        configuration.setProperty("hibernate.connection.driver_class", "org.postgresql.Driver");
+        configuration.setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/db_example");
+        configuration.setProperty("hibernate.connection.username", "root");
+        configuration.setProperty("hibernate.connection.password", "root");
+        configuration.setProperty("hibernate.show_sql", "true");
+        configuration.setProperty("hibernate.hbm2ddl.auto", "create");
+        configuration.addAnnotatedClass(Car.class);
+        configuration.addAnnotatedClass(DailyReport.class);
+
+        return configuration;
+    }
 
     private static SessionFactory createSessionFactory() {
-        Configuration configuration = getMySqlConfiguration();
+        Configuration configuration = getPostgreSqlConfiguration();
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder();
         builder.applySettings(configuration.getProperties());
         ServiceRegistry serviceRegistry = builder.build();

@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83a47135-4eb2-4bb3-91e9-1b823e8742d9" name="Default" comment="" />
+    <list default="true" id="83a47135-4eb2-4bb3-91e9-1b823e8742d9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web4/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web4/.idea/libraries/Maven__org_postgresql_postgresql_42_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/web4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/web4.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,6 +50,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1VXRPPFIiwkFhjd1l5kJEORSTYP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -35,7 +63,7 @@
     <property name="android.sdk.path" value="C:/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -146,6 +174,7 @@
       <workItem from="1578999543748" duration="621000" />
       <workItem from="1579009352112" duration="3233000" />
       <workItem from="1579151185990" duration="4545000" />
+      <workItem from="1579721585166" duration="1217000" />
     </task>
     <servers />
   </component>
