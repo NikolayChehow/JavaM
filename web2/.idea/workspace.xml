@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83a47135-4eb2-4bb3-91e9-1b823e8742d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/libraries/Maven__org_postgresql_postgresql_42_2_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/web4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/web4.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +154,7 @@
       <workItem from="1579009352112" duration="3233000" />
       <workItem from="1579151185990" duration="4545000" />
       <workItem from="1579721585166" duration="1217000" />
+      <workItem from="1579981170220" duration="1233000" />
     </task>
     <servers />
   </component>
@@ -230,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578601162217" />
-    <state x="342" y="216" key="new project wizard" timestamp="1578680842515">
+    <state x="342" y="216" key="new project wizard" timestamp="1579982401659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1578680842515" />
+    <state x="342" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579982401659" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578601158196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

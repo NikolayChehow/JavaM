@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a39cc-49be-465c-b61a-b54af8a170df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../web2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/libraries/Maven__org_postgresql_postgresql_42_2_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/JavaMWeb1.01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/CrudDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/UsersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/UsersDaoJdbcImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/deleteUsers.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/updateUsers.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/users.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/CarDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/DAO/DailyReportDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/model/DailyReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/service/DailyReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/DailyReportServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/NewDayServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/servlet/ProducerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/src/main/java/util/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web4/web4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/web4.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,10 @@
       <set />
     </option>
     <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_exampl@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db_example@localhost" type="feb32156:DbDataSourceImpl" />
@@ -117,7 +123,7 @@
     <property name="android.sdk.path" value="C:/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -331,6 +337,11 @@
       <workItem from="1579384049445" duration="3327000" />
       <workItem from="1579550611363" duration="2900000" />
       <workItem from="1579720155923" duration="3100000" />
+      <workItem from="1579981184060" duration="704000" />
+      <workItem from="1580072046327" duration="2951000" />
+      <workItem from="1580140544943" duration="5177000" />
+      <workItem from="1580156146186" duration="909000" />
+      <workItem from="1580325509076" duration="3900000" />
     </task>
     <servers />
   </component>
@@ -346,10 +357,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579202626335" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1579732080707">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580143026028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579732080707" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580143026028" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1580152011707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580152011707" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1579297101133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,10 +397,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579207595122" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1579303631754">
+    <state x="440" y="95" key="SettingsEditor" timestamp="1580142052666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579303631754" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580142052666" />
     <state x="842" y="410" width="326" height="235" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1579004309941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -402,26 +417,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="162" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579201435223" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

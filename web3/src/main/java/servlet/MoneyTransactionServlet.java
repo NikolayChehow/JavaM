@@ -23,6 +23,7 @@ public class MoneyTransactionServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         Map<String, Object> pageVariables = new HashMap<>();
         String senderName = req.getParameter("senderName");
         String nameTo = req.getParameter("nameTo");
@@ -35,7 +36,9 @@ public class MoneyTransactionServlet extends HttpServlet {
             BankClient bankClient = new BankClient(senderName, senderPass, count);
             if (bankClientService.sendMoneyToClient(bankClient, nameTo, count)) {
                 pageVariables.put("message", "The transaction was successful");
-            } else  pageVariables.put("message", "transaction rejected");
+            } else  {
+                pageVariables.put("message", "transaction rejected");
+            }
 
             resp.setStatus(200);
             resp.getWriter().println(PageGenerator.getInstance().getPage("resultPage.html", pageVariables));
