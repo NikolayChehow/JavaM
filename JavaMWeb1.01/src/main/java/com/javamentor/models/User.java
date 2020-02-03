@@ -1,6 +1,5 @@
 package com.javamentor.models;
 
-import java.util.List;
 
 public class User {
 

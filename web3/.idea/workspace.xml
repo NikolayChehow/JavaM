@@ -2,30 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a39cc-49be-465c-b61a-b54af8a170df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/JavaMWeb1.01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/CrudDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/UsersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/dao/UsersDaoJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/deleteUsers.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/updateUsers.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/users.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/.idea/JavaMWeb1.02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/JavaMWeb1.02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UserHibernateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/css/users1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/deleteUsers.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/updateUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/users1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.01/src/main/webapp/jsp/users.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MoneyTransactionServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -341,7 +332,9 @@
       <workItem from="1580072046327" duration="2951000" />
       <workItem from="1580140544943" duration="5177000" />
       <workItem from="1580156146186" duration="909000" />
-      <workItem from="1580325509076" duration="3900000" />
+      <workItem from="1580325509076" duration="4499000" />
+      <workItem from="1580412818760" duration="1208000" />
+      <workItem from="1580672235142" duration="599000" />
     </task>
     <servers />
   </component>
