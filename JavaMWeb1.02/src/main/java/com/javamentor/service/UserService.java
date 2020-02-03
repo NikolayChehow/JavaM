@@ -74,6 +74,7 @@ public class UserService {
 
         Configuration configuration = new Configuration();
         try {
+         //   properties.load(HibernateConfig.class.getClassLoader().getResourceAsStream("hibernate.properties"));
         properties.load(new FileInputStream("C:\\Users\\nk\\IdeaProjects\\JavaM\\JavaM\\JavaMWeb1.02\\target\\JavaMWeb1.02-0.1\\WEB-INF\\classes\\db.properties"));
         configuration.setProperty("hibernate.dialect", properties.getProperty("hibernate.dialect"));
         configuration.setProperty("hibernate.connection.driver_class", properties.getProperty("db.driverClassName"));
