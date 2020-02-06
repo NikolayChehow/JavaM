@@ -7,7 +7,7 @@ public interface CrudDao<T> {
 
     // Create Read Update Delete!! CRUD
     // Pattern Dao - Data accept Objects! - ОБЪЕКТ ДОСТУПА К ДАННЫМ!
-    Optional<T> find(Integer id);
+    T find(Integer id);
     void save(T model);
     void update(T model);
     void delete(String name);

@@ -13,7 +13,7 @@ import java.util.List;
 
 @WebServlet("/deleteUsers")
 public class DeleteUserServlet extends HttpServlet {
-    UserService userService = new UserService();
+    UserService userService = UserService.getInstance();
 
 
 
@@ -22,9 +22,10 @@ public class DeleteUserServlet extends HttpServlet {
         String firstName = req.getParameter("first-name");
 
         userService.deleteUsers(firstName);
-        List<User> users = userService.findAll();
-        req.setAttribute("usersFromServer", users);
-        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
+//        List<User> users = userService.findAll();
+//        req.setAttribute("usersFromServer", users);
+//        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
+        resp.sendRedirect(req.getContextPath() + "/users");
     }
 
 

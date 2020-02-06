@@ -13,7 +13,7 @@ import java.util.List;
 
 @WebServlet("/updateUsers")
 public class UpdateUserServlet extends HttpServlet {
-    UserService userService = new UserService();
+    UserService userService = UserService.getInstance();
 
 
 
@@ -23,9 +23,11 @@ public class UpdateUserServlet extends HttpServlet {
         String lastName = req.getParameter("last-name");
         User user = new User(firstName,lastName);
         userService.updateUsers(user);
-        List<User> users = userService.findAll();
-        req.setAttribute("usersFromServer", users);
-        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
+//        List<User> users = userService.findAll();
+//        req.setAttribute("usersFromServer", users);
+//        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
+        resp.sendRedirect(req.getContextPath() + "/users");
+
     }
 
 

@@ -8,7 +8,7 @@
     <artifactId>JavaMWeb1.02</artifactId>
     <version>0.1</version>
     <properties>
-        <org.hibernate.hibernate-core.version>4.3.10.Final</org.hibernate.hibernate-core.version>
+        <org.hibernate.hibernate-core.version>5.2.10.Final</org.hibernate.hibernate-core.version>
     </properties>
 
     <build>

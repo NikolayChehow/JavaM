@@ -13,13 +13,13 @@ import java.util.List;
 
 @WebServlet("/users")
 public class UserServlet extends HttpServlet {
-    UserService userService = new UserService();
+    UserService userService = UserService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<User> users = userService.findAll();
         req.setAttribute("usersFromServer", users);
-        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
+        req.getServletContext().getRequestDispatcher("/jsp/crud.jsp").forward(req, resp);
     }
 
     @Override
@@ -31,8 +31,5 @@ public class UserServlet extends HttpServlet {
         doGet(req, resp);
     }
 
-    @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doDelete(req, resp);
-    }
+
 }

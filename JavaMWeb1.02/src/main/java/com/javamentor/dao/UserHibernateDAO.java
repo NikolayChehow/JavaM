@@ -1,28 +1,42 @@
 package com.javamentor.dao;
 import com.javamentor.models.User;
+import com.javamentor.util.DBHelper;
+import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
 import java.util.Optional;
 
-public class UserHibernateDAO implements UsersDao{
+public class UserHibernateDAO implements UsersDao {
     private Session session;
 
-    public UserHibernateDAO(Session session) {
+    private static UserHibernateDAO usersDaoJdbc;
+
+    public static UserHibernateDAO getInstance() {
+        if (usersDaoJdbc == null) {
+            usersDaoJdbc = new UserHibernateDAO(DBHelper.getSessionFactory().openSession());
+        }
+        return usersDaoJdbc;
+    }
+
+    private UserHibernateDAO(Session session) {
         this.session = session;
     }
 
     @Override
     public User findByFirstName(String firstName) {
-        return  (User) session.createQuery("FROM User Where firstName='" + firstName + "'").list().get(0);
+        return (User) session.createQuery("FROM User Where firstName='" + firstName + "'").getSingleResult();
 
 
     }
 
     @Override
-    public Optional<User> find(Integer id) {
-        return Optional.empty();
+    public User find(Integer id) {
+
+        Query query = session.createQuery("from User where id = '" + id + "' ");
+        return (User) query.getSingleResult();
+
     }
 
     @Override
@@ -43,9 +57,6 @@ public class UserHibernateDAO implements UsersDao{
     }
 
 
-
-
-
     @Override
     public void delete(String name) {
 
@@ -63,66 +74,6 @@ public class UserHibernateDAO implements UsersDao{
         return result;
     }
 }
-//
-//    private Session session;
-//
-//    public CarDao(Session session) {
-//        this.session = session;
-//    }
-//
-//    public List<Car> getAllCar() {
-//        Transaction transaction = session.beginTransaction();
-//        List<Car> cars = session.createQuery("FROM Car").list();
-//        transaction.commit();
-//        session.close();
-//        return cars;
-//    }
-//
-//    public int getCarForBrand(String brand) {
-//        int count = 0;
-//        Transaction transaction = session.beginTransaction();
-//        List<Car> cars = session.createQuery("FROM Car Where brand= ' " + brand + "'").list();
-//        count = cars.size() + 1;
-//        transaction.commit();
-//        session.close();
-//        return count;
-//    }
-//
-//    public void carAdd(Car car) {
-//        Transaction transaction = session.beginTransaction();
-//        session.save(car);
-//        transaction.commit();
-//        session.close();
-//
-//    }
-//
-//    public void carDelete() {
-//        Transaction transaction = session.beginTransaction();
-//        session.createQuery("DELETE FROM Car").executeUpdate();
-//        transaction.commit();
-//        session.close();
-//
-//    }
-//
-//    public void carDeleteBuy(Car car) {
-//        Transaction transaction1 = session.beginTransaction();
-//        session.delete(car);
-//        transaction1.commit();
-//        session.close();
-//    }
-//
-//    public Car getCarForLicensePlate(Car car) {
-//        Transaction transaction = session.beginTransaction();
-//        List<Car> cars = session.createQuery("FROM Car Where licensePlate= '" + car.getLicensePlate() + "'").list();
-//        transaction.commit();
-//        session.close();
-//        if (cars.size() > 0) {
-//            return cars.get(0);
-//        }
-//        return null;
-//    }
-//
-//}
 
 
 
