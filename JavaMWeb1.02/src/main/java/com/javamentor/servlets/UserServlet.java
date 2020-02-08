@@ -18,15 +18,17 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<User> users = userService.findAll();
-        req.setAttribute("usersFromServer", users);
-        req.getServletContext().getRequestDispatcher("/jsp/crud.jsp").forward(req, resp);
+        req.setAttribute("usersFromDB", users);
+        req.getServletContext().getRequestDispatcher("/jsp/users.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String firstName = req.getParameter("first-name");
-        String lastName = req.getParameter("last-name");
-        User user = new User(firstName,lastName);
+        String firstName = req.getParameter("firstName");
+        String lastName = req.getParameter("lastName");
+        String email = req.getParameter("email");
+        String password = req.getParameter("password");
+        User user = new User(firstName, lastName, email,password);
         userService.save(user);
         doGet(req, resp);
     }

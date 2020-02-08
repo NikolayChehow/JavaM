@@ -1,32 +1,31 @@
 package com.javamentor.dao;
+
 import com.javamentor.models.User;
-import com.javamentor.util.DBHelper;
 import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
-import java.util.Optional;
 
 public class UserHibernateDAO implements UsersDao {
     private Session session;
 
-    private static UserHibernateDAO usersDaoJdbc;
+//    private static UserHibernateDAO usersDaoJdbc;
+//
+//    public static UserHibernateDAO getInstance() {
+//        if (usersDaoJdbc == null) {
+//            usersDaoJdbc = new UserHibernateDAO(DBHelper.getSessionFactory().openSession());
+//        }
+//        return usersDaoJdbc;
+//    }
 
-    public static UserHibernateDAO getInstance() {
-        if (usersDaoJdbc == null) {
-            usersDaoJdbc = new UserHibernateDAO(DBHelper.getSessionFactory().openSession());
-        }
-        return usersDaoJdbc;
-    }
-
-    private UserHibernateDAO(Session session) {
+    public UserHibernateDAO(Session session) {
         this.session = session;
     }
 
     @Override
-    public User findByFirstName(String firstName) {
-        return (User) session.createQuery("FROM User Where firstName='" + firstName + "'").getSingleResult();
+    public User findByEmail(String email) {
+        return (User) session.createQuery("FROM User Where email='" + email + "'").getSingleResult();
 
 
     }
@@ -51,17 +50,23 @@ public class UserHibernateDAO implements UsersDao {
     @Override
     public void update(User user) {
         Transaction transaction = session.beginTransaction();
-        session.createQuery("UPDATE User SET lastName = '" + user.getLastName() + "' WHERE firstName ='" + user.getFirstName() + "'").executeUpdate();
+        Query query = session.createQuery("update User set firstName=:firstName, lastName=:lastName, email=:email, password=:password where id =:id");
+        query.setParameter("firstName", user.getFirstName());
+        query.setParameter("lastName", user.getLastName());
+        query.setParameter("email", user.getEmail());
+        query.setParameter("password", user.getPassword());
+        query.setParameter("id", user.getId());
+        int result = query.executeUpdate();
         transaction.commit();
         session.close();
     }
 
 
     @Override
-    public void delete(String name) {
+    public void delete(Integer id) {
 
         Transaction transaction = session.beginTransaction();
-        session.delete(findByFirstName(name));
+        session.delete(find(id));
         transaction.commit();
         session.close();
 

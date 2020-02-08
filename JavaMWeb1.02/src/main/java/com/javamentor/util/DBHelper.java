@@ -7,16 +7,12 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-
 public class DBHelper {
-
     private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
@@ -35,7 +31,6 @@ public class DBHelper {
         return connection;
     }
 
-
     @SuppressWarnings("UnusedDeclaration")
     private static Configuration getSqlConfiguration() {
         Properties properties = PropertyReader.getProperties(DBHelper.class.getClassLoader().getResourceAsStream("db.properties"));
@@ -49,8 +44,6 @@ public class DBHelper {
         configuration.setProperty("hibernate.show_sql", properties.getProperty("show_sql"));
         configuration.setProperty("hibernate.hbm2ddl.auto", properties.getProperty("hbm2ddl"));
         configuration.addAnnotatedClass(User.class);
-
-
         return configuration;
     }
 
@@ -58,20 +51,16 @@ public class DBHelper {
 
         Properties properties = PropertyReader.getProperties(DBHelper.class.getClassLoader().getResourceAsStream("db.properties"));
         Connection connection = null;
-
         String dbUrl = properties.getProperty("db.url");
         String dbUserName = properties.getProperty("db.username");
         String dbPassword = properties.getProperty("db.password");
         String driverClassName = properties.getProperty("db.driverClassName");
-
         try {
             Class.forName(driverClassName);
             connection = DriverManager.getConnection(dbUrl, dbUserName, dbPassword);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
-
-
         return connection;
     }
 

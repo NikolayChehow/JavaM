@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31066d14-a391-4987-a198-f3050d3904ab" name="Default" comment="" />
+    <list default="true" id="31066d14-a391-4987-a198-f3050d3904ab" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/CrudDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/CrudDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UserHibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UserHibernateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UsersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UsersDaoJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/dao/UsersDaoJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/ManagerDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/ManagerDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/UserHibernateDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/UserHibernateDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/UserJdbcDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/factory/UserJdbcDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/servlets/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/util/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/java/com/javamentor/util/DBHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/resources/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/crud.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/css/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/css/user1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/css/user1old.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/src/main/webapp/jsp/css/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1.war" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/CrudDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/CrudDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UserHibernateDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UsersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UsersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UsersDaoJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/dao/UsersDaoJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/ManagerDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/ManagerDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/UserHibernateDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/UserHibernateDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/UserJdbcDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/factory/UserJdbcDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/DeleteUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/UpdateUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/UpdateUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/servlets/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/com/javamentor/util/DBHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/WEB-INF/classes/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/jsp/crud.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/jsp/css/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/jsp/css/user1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/jsp/users.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/JavaMWeb1.02-0.1/jsp/users.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/CrudDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/CrudDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UserHibernateDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UsersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UsersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UsersDaoJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/dao/UsersDaoJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/ManagerDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/ManagerDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/UserHibernateDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/UserHibernateDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/UserJdbcDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/factory/UserJdbcDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/DeleteUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/UpdateUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/UpdateUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/servlets/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/com/javamentor/util/DBHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.02/target/classes/hibernate.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +71,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +82,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1VRlB2bSm3IcnPAsiTxUijbqleN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,7 +93,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -138,6 +199,7 @@
       <workItem from="1579201241173" duration="530000" />
       <workItem from="1579201885616" duration="773000" />
       <workItem from="1579293533618" duration="295000" />
+      <workItem from="1581115924463" duration="1278000" />
     </task>
     <servers />
   </component>

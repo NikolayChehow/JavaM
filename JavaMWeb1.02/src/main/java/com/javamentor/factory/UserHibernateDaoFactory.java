@@ -1,15 +1,14 @@
 package com.javamentor.factory;
 
-import com.javamentor.dao.CrudDao;
 import com.javamentor.dao.UserHibernateDAO;
 import com.javamentor.dao.UsersDao;
-import com.javamentor.models.User;
+import com.javamentor.util.DBHelper;
 
 public class UserHibernateDaoFactory implements UserDaoFactory {
 
 
     @Override
     public UsersDao getDao() {
-        return UserHibernateDAO.getInstance();
+        return new UserHibernateDAO(DBHelper.getSessionFactory().openSession());
     }
 }
