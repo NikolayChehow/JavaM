@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd3d4d3e-65b6-4b1b-80eb-9f20c2cf99fc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/filters/AuthFilterAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/filters/AuthFilterUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/servlets/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +108,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaMWeb1.02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -207,6 +214,7 @@
       <workItem from="1580930404790" duration="2058000" />
       <workItem from="1581017953491" duration="733000" />
       <workItem from="1581024502520" duration="9000" />
+      <workItem from="1581370276983" duration="933000" />
     </task>
     <servers />
   </component>
