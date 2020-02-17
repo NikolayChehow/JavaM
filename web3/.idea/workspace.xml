@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7a39cc-49be-465c-b61a-b54af8a170df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/filters/AuthFilterAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/filters/AuthFilterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/servlets/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/java/com/javamentor/servlets/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/webapp/jsp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaMWeb1.05/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMWeb1.05/.idea/JavaMWeb1.05.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web4/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -328,7 +323,7 @@
       <workItem from="1580412818760" duration="1208000" />
       <workItem from="1580672235142" duration="599000" />
       <workItem from="1580934100651" duration="1234000" />
-      <workItem from="1581370260150" duration="2216000" />
+      <workItem from="1581370260150" duration="2815000" />
     </task>
     <servers />
   </component>

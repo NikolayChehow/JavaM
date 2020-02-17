@@ -35,12 +35,13 @@ public class AdminUpdateServlet extends HttpServlet {
         String lastName = req.getParameter("lastName");
         String email = req.getParameter("email");
         String password = req.getParameter("password");
-        User user = new User(id, firstName, lastName, email, password);
+        String nameRole= req.getParameter("nameRole");
+        User user = new User(id, firstName, lastName, email, password, nameRole);
         userService.updateUsers(user);
 //        List<User> users = userService.findAll();
 //        req.setAttribute("usersFromServer", users);
 //        req.getServletContext().getRequestDispatcher("/jsp/adminPanel.jsp").forward(req, resp);
-        resp.sendRedirect(req.getContextPath() + "/users");
+        resp.sendRedirect(req.getContextPath() + "/admin/admin");
 
     }
 
