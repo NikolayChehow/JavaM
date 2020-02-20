@@ -17,8 +17,9 @@ public class UserServise {
     public List<User> findAll() {
         return usersRepository.findAll();
     }
+
     public User findOne(Long id) {
-        return usersRepository.findOne(id);
+        return usersRepository.findUserById(id);
     }
 
     public List<User> findAllByFirstName(String firstName) {
@@ -31,20 +32,24 @@ public class UserServise {
     }
 
 
-    public void  getUpdate(UserForm userForm, Long id) {
-
-        User user = usersRepository.findOne(id);
-        user.setFirstName(userForm.getFirstName());
-        user.setLastName(userForm.getLastName());
-        user.setEmail(userForm.getEmail());
-        user.setPassword(userForm.getPassword());
-        user.setNameRole(userForm.getNameRole());
-        usersRepository.save(user);
-
+    //    public void  getUpdate(UserForm userForm, Long id) {
+//
+//        User user = usersRepository.findUserById(id);
+//        user.setFirstName(userForm.getFirstName());
+//        user.setLastName(userForm.getLastName());
+//        user.setEmail(userForm.getEmail());
+//        user.setPassword(userForm.getPassword());
+//        user.setNameRole(userForm.getNameRole());
+//        usersRepository.save(user);
+//
+//    }
+    public void getUpdate(UserForm userForm, Long id) {
+        User userUpdate = User.fromUpdate(userForm, id);
+        usersRepository.save(userUpdate);
     }
 
-    public void delete(Long id) {
-        usersRepository.delete(id);
+    public void delete(User user) {
+        usersRepository.delete(user);
     }
 
 }

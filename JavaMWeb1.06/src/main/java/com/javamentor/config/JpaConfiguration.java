@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -37,19 +37,19 @@ public class JpaConfiguration {
         return dataSource;
     }
 
-    @Bean
-    public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
-        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource);
-        sessionFactory.setPackagesToScan("com.javamentor.models");
-        sessionFactory.setHibernateProperties(new Properties() {{
-            put("hibernate.show_sql", true);
-            put("hibernate.dialect",
-                    "org.hibernate.dialect.PostgreSQLDialect");
-            put("hibernate.hbm2ddl.auto", "update");
-        }});
-        return sessionFactory;
-    }
+//    @Bean
+//    public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
+//        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+//        sessionFactory.setDataSource(dataSource);
+//        sessionFactory.setPackagesToScan("com.javamentor.models");
+//        sessionFactory.setHibernateProperties(new Properties() {{
+//            put("hibernate.show_sql", true);
+//            put("hibernate.dialect",
+//                    "org.hibernate.dialect.PostgreSQLDialect");
+//            put("hibernate.hbm2ddl.auto", "update");
+//        }});
+//        return sessionFactory;
+//    }
     @Bean
     public EntityManagerFactory entityManagerFactory(DataSource dataSource) {
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
@@ -61,6 +61,7 @@ public class JpaConfiguration {
         entityManagerFactory.setDataSource(dataSource);
         entityManagerFactory.setJpaVendorAdapter(jpaVendorAdapter);
         entityManagerFactory.setPackagesToScan("com.javamentor.models");
+        entityManagerFactory.setJpaProperties(jpaProperties());
         entityManagerFactory.afterPropertiesSet();
         return entityManagerFactory.getObject();
     }
@@ -77,6 +78,15 @@ public class JpaConfiguration {
     @Bean
     public PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslator() {
         return new PersistenceExceptionTranslationPostProcessor();
+    }
+    public Properties jpaProperties() {
+        Properties properties = new Properties();
+        properties.setProperty("hibernate.dialect",
+                "org.hibernate.dialect.PostgreSQLDialect");
+        properties.setProperty("hibernate.show_sql",
+                "true");
+        properties.setProperty("hibernate.hbm2ddl.auto", "update");
+        return properties;
     }
 
 

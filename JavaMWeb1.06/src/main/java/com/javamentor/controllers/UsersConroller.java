@@ -71,7 +71,7 @@ public class UsersConroller {
         for (User user : users) {
             for (String str : items) {
                 if (str.equals(user.getId().toString())) {
-                    userServise.delete(user.getId());
+                    userServise.delete(user);
                 }
             }
         }
