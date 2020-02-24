@@ -28,7 +28,8 @@
                 <th>firstName</th>
                 <th>lastName</th>
                 <th>email</th>
-                <th>nameRole</th>
+                <th>role</th>
+                <th>state</th>
 <%--                <th>password</th>--%>
             </tr>
             <c:forEach items="${usersFromDB}" var="User">
@@ -37,7 +38,8 @@
                     <th>${User.firstName}</th>
                     <th>${User.lastName}</th>
                     <th>${User.email}</th>
-                    <th>${User.nameRole}</th>
+                    <th>${User.role.name()}</th>
+                    <th>${User.state.name()}</th>
 <%--                    <th>${User.password}</th>--%>
                     <td>
                         <a href="/admin/updateUsers?id=<c:out value='${User.id}' />">Edit</a>
@@ -73,12 +75,19 @@
             <input id="email" name="email">
         </label></br>
         <label for="password">Password
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" >
         </label></br>
-        <label for="nameRole"> Name Role
-            <select name="nameRole" id="nameRole" size="1">
-                <option selected value="user">user</option>
-                <option selected value="admin">admin</option>
+        <label for="role"> Role
+            <select name="role" id="role" size="1">
+                <option selected value="ADMIN">ADMIN</option>
+                <option selected value="USER">USER</option>
+            </select>
+        </label></br>
+        <label for="state"> State
+            <select name="state" id="state" size="1">
+                <option selected value="BANNED">BANNED</option>
+                <option selected value="DELETED">DELETED</option>
+                <option selected value="ACTIVE">ACTIVE</option>
             </select>
         </label></br>
 

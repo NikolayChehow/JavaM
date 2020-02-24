@@ -1,9 +1,12 @@
 package com.javamentor.service;
 
 import com.javamentor.forms.UserForm;
+import com.javamentor.models.Role;
+import com.javamentor.models.State;
 import com.javamentor.models.User;
 import com.javamentor.repositories.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +16,9 @@ public class UserServise {
 
     @Autowired
     private UsersRepository usersRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public List<User> findAll() {
         return usersRepository.findAll();
@@ -26,8 +32,16 @@ public class UserServise {
         return usersRepository.findAllByFirstName(firstName);
     }
 
-    public void save(User user) {
-
+    public void save(UserForm userForm) {
+        String hashPassword = passwordEncoder.encode(userForm.getPassword());
+        User user = User.builder()
+                .firstName(userForm.getFirstName())
+                .lastName(userForm.getLastName())
+                .email(userForm.getEmail())
+                .password(hashPassword)
+                .role(userForm.getRole())
+                .state(userForm.getState())
+                .build();
         usersRepository.save(user);
     }
 
@@ -44,7 +58,16 @@ public class UserServise {
 //
 //    }
     public void getUpdate(UserForm userForm, Long id) {
-        User userUpdate = User.fromUpdate(userForm, id);
+        String hashPassword = passwordEncoder.encode(userForm.getPassword());
+        User userUpdate = User.builder()
+                .firstName(userForm.getFirstName())
+                .lastName(userForm.getLastName())
+                .email(userForm.getEmail())
+                .password(hashPassword)
+                .role(userForm.getRole())
+                .state(userForm.getState())
+                .id(id)
+                .build();
         usersRepository.save(userUpdate);
     }
 
@@ -52,4 +75,6 @@ public class UserServise {
         usersRepository.delete(user);
     }
 
+
 }
+

@@ -1,5 +1,7 @@
 package com.javamentor.forms;
 
+import com.javamentor.models.Role;
+import com.javamentor.models.State;
 import lombok.Data;
 
 @Data
@@ -8,6 +10,7 @@ public class UserForm {
     private String lastName;
     private String email;
     private String password;
-    private String nameRole;
+    private Role role;
+    private State state;
 
 }

@@ -1,16 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 00sna
-  Date: 08.02.2020
-  Time: 21:42
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Login</title>
+    <style>
+        <%@include file='css/styles.css' %>
+    </style>
 </head>
 <body>
+
 <form method="post" action="/login">
     <label name="email" > email
         <input id="email" name="email">

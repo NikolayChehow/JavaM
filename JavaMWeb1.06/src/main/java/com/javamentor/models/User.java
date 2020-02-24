@@ -34,8 +34,13 @@ public class User {
         @Column(name = "password")
         private String password;
 
-        @Column(name = "name_role")
-        private String nameRole;
+        @Column(name = "role")
+        @Enumerated(value = EnumType.STRING)
+        private Role role;
+
+        @Column(name = "state")
+        @Enumerated(value = EnumType.STRING)
+        private State state;
 
 
         public static User from(UserForm form) {
@@ -44,7 +49,8 @@ public class User {
                         .lastName(form.getLastName())
                         .email(form.getEmail())
                         .password(form.getPassword())
-                        .nameRole(form.getNameRole())
+                        .role(form.getRole())
+                        .state(form.getState())
                         .build();
         }
         public static User fromUpdate(UserForm form , Long id) {
@@ -55,7 +61,8 @@ public class User {
                         .lastName(form.getLastName())
                         .email(form.getEmail())
                         .password(form.getPassword())
-                        .nameRole(form.getNameRole())
+                        .role(form.getRole())
+                        .state(form.getState())
                         .id(id)
                         .build();
         }

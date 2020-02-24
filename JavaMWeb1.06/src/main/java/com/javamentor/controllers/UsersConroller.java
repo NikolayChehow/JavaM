@@ -37,8 +37,7 @@ public class UsersConroller {
     @PostMapping("/admin/admin")
     public String addUsers(UserForm userForm) {
 
-        User newUser = User.from(userForm);
-        userServise.save(newUser);
+        userServise.save(userForm);
         return "redirect:/admin/admin";
     }
 
@@ -56,7 +55,7 @@ public class UsersConroller {
 
     @PostMapping("admin/updateUsers")
     public String setUpdate(UserForm uf) {
-        userServise.getUpdate(uf,id);
+        userServise.getUpdate(uf, id);
 
 //         User newUser = User.fromUpdate(userForm, id);
 //        usersRepository.setUserInfoById(uf.getFirstName(), uf.getLastName(), uf.getEmail(), uf.getPassword(), uf.getNameRole(), id);
