@@ -1,0 +1,43 @@
+package com.javamentor.service;
+
+import com.javamentor.forms.UserForm;
+import com.javamentor.models.Role;
+import com.javamentor.models.State;
+import com.javamentor.models.User;
+import com.javamentor.repositories.UsersRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class SignUpServiceImpl implements SignUpService {
+
+    @Autowired
+    private UsersRepository usersRepository;
+
+    // эквивалентно через конструктор , отличие  что если убрать спринг то приложение будет работать:
+//    private final UsersRepository usersRepository;
+//    @Autowired
+//    public SignUpServiceImpl(UsersRepository usersRepository) {
+//        this.usersRepository = usersRepository;
+//    }
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Override
+    public void signUp(UserForm userForm) {
+        String hashPassword = passwordEncoder.encode(userForm.getPassword());
+        User user = User.builder()
+                .firstName(userForm.getFirstName())
+                .lastName(userForm.getLastName())
+                .email(userForm.getEmail())
+                .password(hashPassword)
+                .role(Role.USER)
+                .state(State.ACTIVE)
+                .build();
+        usersRepository.save(user);
+
+    }
+}

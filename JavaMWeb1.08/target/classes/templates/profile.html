@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<h2>Приветствуем Вас на главной странице!</h2>
+<h3 th:utext="${user.firstName}">..!..</h3>
+<h3 th:utext="${user.lastName}">..!..</h3>
+<a href="/logout">Выход</a>
+</body>
+</html>
