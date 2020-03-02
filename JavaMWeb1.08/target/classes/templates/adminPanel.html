@@ -30,11 +30,11 @@
                     <td th:utext="${user.state.name()}">...</td>
 
                     <td>
-                        <a href="/admin/updateUsers?id=<th:each value='${user.id}' />">Edit</a>
+                        <a th:href="@{/admin/updateUsers(id= ${user.id})}">Edit</a>
                     </td>
                     <!---------Check box Delete----------->
                     <td id="deleteUsers">
-                        <input type="checkbox" name="Delete" value=${User.id}>
+                        <input type="checkbox" name="Delete" th:value="${user.id}">
                     </td>
                 </tr>
                 </th:each>
@@ -51,7 +51,7 @@
         <h4>add User in dataBase</h4>
     </div>
 
-    <form method="post" action="${pageContext.request.contextPath}/admin/admin">
+    <form method="post" th:action="@{/admin/admin}">
 
         <label for="firstName">FirstName
             <input id="firstName" name="firstName">

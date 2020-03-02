@@ -11,7 +11,7 @@
         <table align="form-style-2" border="2px" bgcolor="#ffe4b5" >
         <tr>
             <td style="border: 1px solid black; text-align: center">
-                <a href="${pageContext.servletContext.contextPath}/admin/admin">back to AdminPanel</a>
+                <a th:href="@{/admin/admin}">back to AdminPanel</a>
             </td>
             <div class="form-style-2-heading">
             </div>
@@ -24,14 +24,14 @@
     <table>
         <table align="form-style-2" border="2px" bgcolor="#ffe4b5" >
         <tr>
-<%--            <th>id</th>--%>
+           <th>id</th>
             <th>firstName</th>
             <th>lastName</th>
             <th>email</th>
             <th>role</th>
             <th>state</th>
 
-<%--            <th>password</th>--%>
+           <th>password</th>
         </tr>
 
             <tr th:each="user : ${usersFromDB}">
@@ -47,19 +47,19 @@
     </table>
     </table>
     <h4>Input new parametrs</h4>
-    <form method="post" action="/admin/updateUsers">
+    <form method="post" th:action="@{/admin/updateUsers}">
 
         <label for="firstName">FirstName
-            <input id="firstName" name="firstName" value="${User.firstName}">
+            <input id="firstName" name="firstName" >
         </label></br>
         <label for="lastName">Lastname
-            <input id="lastName" name="lastName" value="${User.lastName}">
+            <input id="lastName" name="lastName" >
         </label></br>
         <label for="email"> Email
-            <input id="email" name="email" value="${User.email}">
+            <input id="email" name="email" >
         </label></br>
         <label for="password">Password
-            <input type="password" id="password" name="password" value="${User.password}">
+            <input type="password" id="password" name="password" >
         </label></br>
         <label for="role"> Role
             <select name="role" id="role" size="1" >
@@ -77,7 +77,9 @@
 
         <input type="submit" value="update in DB!">
     </form>
-    </th:each>
+
+
+
 </div>
 </body>
 </html>
