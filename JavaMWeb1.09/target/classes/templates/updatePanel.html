@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Update Admin Panel</title>
+    <!--    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="form-style-2">
+    <table style=" width: 100%; border: 4px double black;">
+        <table align="form-style-2" border="2px" bgcolor="#ffe4b5">
+            <tr>
+                <td style="border: 1px solid black; text-align: center">
+                    <a th:href="@{/admin/admin}">back to AdminPanel</a>
+                </td>
+                <div class="form-style-2-heading">
+                </div>
+
+            </tr>
+        </table>
+        <div class="form-style-2-heading">
+            Change User!
+        </div>
+        <table>
+            <table align="form-style-2" border="2px" bgcolor="#ffe4b5">
+                <tr>
+                    <th>id</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>email</th>
+                    <th>role</th>
+                    <th>state</th>
+
+                    <th>password</th>
+                </tr>
+
+                <tr th:each="user : ${usersFromDB}">
+                    <td th:utext="${user.id}">...</td>
+                    <td th:utext="${user.firstName}">...</td>
+                    <td th:utext="${user.lastName}">...</td>
+                    <td th:utext="${user.email}">...</td>
+                    <td th:utext="${user.role.name()}">...</td>
+                    <td th:utext="${user.state.name()}">...</td>
+                </tr>
+
+            </table>
+        </table>
+    </table>
+    <h4>Input new parametrs</h4>
+    <form method="post" th:action="@{/admin/updateUsers}">
+
+        <label for="firstName">FirstName
+            <input id="firstName" name="firstName">
+        </label></br>
+        <label for="lastName">Lastname
+            <input id="lastName" name="lastName">
+        </label></br>
+        <label for="email"> Email
+            <input id="email" name="email">
+        </label></br>
+        <label for="password">Password
+            <input type="password" id="password" name="password">
+        </label></br>
+        <label for="role"> Role
+            <select name="role" id="role" size="1">
+                <option selected value="ADMIN">ADMIN</option>
+                <option selected value="USER">USER</option>
+            </select>
+        </label></br>
+        <label for="state"> State
+            <select name="state" id="state" size="1">
+                <option selected value="BANNED">BANNED</option>
+                <option selected value="DELETED">DELETED</option>
+                <option selected value="ACTIVE">ACTIVE</option>
+            </select>
+        </label></br>
+
+        <input type="submit" value="update in DB!">
+    </form>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
