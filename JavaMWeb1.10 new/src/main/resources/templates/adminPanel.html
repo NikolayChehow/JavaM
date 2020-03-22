@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js">
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Admin Panel</title>
+
+</head>
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Project JMWeb1.10</a>
+    <ul class="navbar-nav mr-4">
+        <li class=nav-item text-nowrap>
+            <a class="nav-link" href="/logout">Logout</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar p-5">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link bg-primary text-white" href="/admin/admin">
+                            Admin
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            User
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 p-5">
+
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h2 class="h2">Admin panel</h2>
+            </div>
+
+            <div class="tab-content" id="tabContent">
+                <ul class="nav nav-tabs" id="someTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="table" data-toggle="tab" href="#home">Table </a>
+                    </li>
+                    <li class="nav-item" id="nus">
+                        <a class="nav-link" data-toggle="tab" href="#addUser">New User</a>
+                    </li>
+                </ul>
+
+                <div id="home" class="tab-pane fade active show">
+                    <form id="deleteForm">
+                        <div class="d-flex p-2 bd-primary">Already registered!</div>
+                        <table class="table table-striped" id="usersTable">
+                            <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>firstName</th>
+                                <th>lastName</th>
+                                <th>email</th>
+                                <th>role</th>
+                                <th>state</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Input new parametrs</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="idEdit" class="col-form-label">ID:</label>
+                                        <input type="text" class="form-control" name="id" id="idEdit" readonly required>
+
+
+                                        <label for="firstNameEdit" class="col-form-label">FirstName
+                                            <input id="firstNameEdit" class="form-control" name="firstName" required>
+                                        </label></br>
+                                        <label for="lastNameEdit" class="col-form-label">Lastname
+                                            <input id="lastNameEdit" class="form-control" name="lastName" required>
+                                        </label></br>
+                                        <label for="emailEdit" class="col-form-label"> Email
+                                            <input id="emailEdit" class="form-control" name="email" required>
+                                        </label></br>
+                                        <label for="passwordEdit" class="col-form-label">Password
+                                            <input type="password" class="form-control" id="passwordEdit"
+                                                   name="password" required>
+                                        </label></br>
+                                        <label for="roleEdit" class="col-form-label"> Role
+                                            <select name="role" class="form-control" id="roleEdit" size="1">
+                                                <option selected value="ADMIN">ADMIN</option>
+                                                <option selected value="USER">USER</option>
+                                            </select>
+                                        </label></br>
+                                        <label for="stateEdit" class="col-form-label"> State
+                                            <select name="state" class="form-control" id="stateEdit" size="1">
+                                                <option selected value="BANNED">BANNED</option>
+                                                <option selected value="DELETED">DELETED</option>
+                                                <option selected value="ACTIVE">ACTIVE</option>
+                                            </select>
+                                        </label></br>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button onclick='sendEditForm()' type="button" class="btn btn-primary">Save
+                                            changes
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="addUser" class="tab-pane fade">
+                    <div class="tab-pane fade show active">
+                        <div class="d-flex p-2 bd-primary">Add new User</div>
+                        <div class="col-7 align-self-center">
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstName" class="form-group">FirstName
+                                        <input id="firstName" class="form-control" name="firstName">
+                                    </label></br>
+                                    <label for="lastName" class="form-group">Lastname
+                                        <input id="lastName" class="form-control" name="lastName">
+                                    </label></br>
+                                    <label for="email" class="form-group">Email
+                                        <input id="email" class="form-control" name="email">
+                                    </label></br>
+                                    <label for="password" class="form-group">Password
+                                        <input type="password" class="form-control" id="password" name="password">
+                                    </label></br>
+                                    <label for="role" class="form-group"> Role
+                                        <select name="role" id="role" size="1" class="form-control">
+                                            <option selected value="ADMIN">ADMIN</option>
+                                            <option selected value="USER">USER</option>
+                                        </select>
+                                    </label></br>
+                                    <label for="state" class="form-group"> State
+                                        <select name="state" id="state" size="1" class="form-control">
+                                            <option selected value="BANNED">BANNED</option>
+                                            <option selected value="DELETED">DELETED</option>
+                                            <option selected value="ACTIVE">ACTIVE</option>
+                                        </select>
+                                    </label></br>
+
+                                    <button onclick='addUser()' type="button" class="btn btn-primary">Add user</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+</div>
+<div id="tableBody">
+    <script src="/userScript.js"></script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
