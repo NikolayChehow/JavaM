@@ -7,7 +7,7 @@ function getUserTable() {
             $("#usersTable").append(
                 "<tbody id=\'tableBody1\'>" +
                 "</tbody>"
-            )
+            );
             for (let i in data) {
                 $("#tableBody1").append(
                     "<tr>" +
@@ -55,17 +55,25 @@ $('#myModal').on('show.bs.modal', function (event) {
     modal.find('#emailEdit').val(emailEdit);
     modal.find('#firstNameEdit').val(firstNameEdit);
     modal.find('#lastNameEdit').val(lastNameEdit);
-})
+});
 
 function closeEditModal() {
-    // $("#myModal").modal('toggle');
+    //
+    // $('#myModal').on('hidden.bs.modal', function () {
+    //     $("#tableBody1").empty();
+    //     $("#button-delete").empty();
+    //     // do something…
+    //     getUserTable();
+    // });
+    //
+    //
+    // // $("#myModal").close();
+    // // $("#myModal").style.display = 'none';
+    // // $("#myModal").style.display = '';
 
-    // $("#myModal").close();
-    $("#myModal").style.display = 'none';
+    $("#myModal").modal('toggle');
     $("#tableBody1").empty();
     $("#button-delete").empty();
-
-
     getUserTable();
 }
 
@@ -73,7 +81,7 @@ function showTab() {
     $("#tableBody1").empty();
     $("#button-delete").empty();
         $("#table").tab('show');
-    getUserTable();
+       getUserTable();
 }
 
 $('#deleteForm').submit(function (e) { // Устанавливаем событие отправки для формы с id=form
@@ -99,7 +107,7 @@ function addUser() {
         password: $("#password").val(),
         role: $("#role").val(),
         state: $("#state").val(),
-    }
+    };
 
     let myJson = JSON.stringify(jey);
     $.ajax({
@@ -109,10 +117,10 @@ function addUser() {
         data: myJson,
         contentType: 'application/json',
         success: function (data) {
-            showTab();
-        },
+        }
 
-    })
+    });
+    setTimeout(() => { showTab(); }, 200);
 
 }
 
@@ -125,7 +133,7 @@ function sendEditForm() {
         password: $("#passwordEdit").val(),
         role: $("#roleEdit").val(),
         state: $("#stateEdit").val(),
-    }
+    };
     let myJson = JSON.stringify(jey);
     $.ajax({
         type: "POST",
@@ -133,11 +141,15 @@ function sendEditForm() {
         dataType: 'json',
         data: myJson,
         contentType: 'application/json',
-        success: function () {
+
+        success: function() {
                 // if (data != "") {
-                //     alert(data);
+                    alert("пользователь изменен");
                 // } else {
-            closeEditModal();
-        },
-    })
+            // closeEditModal().delay(100);
+
+        }
+    });
+    setTimeout(() => { closeEditModal(); }, 200);
+
 }
