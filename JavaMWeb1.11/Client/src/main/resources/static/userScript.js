@@ -31,11 +31,9 @@ function getUserTable() {
                 )
             }
             $('.table').after(
-
                 "<div className=\"button-delete\" id=\"button-delete\">" +
                 "<input type=\"submit\" name=\"delete\" value=\"Delete selected users\">" +
                 "</div>"
-
             )
         }
     });
@@ -58,18 +56,6 @@ $('#myModal').on('show.bs.modal', function (event) {
 });
 
 function closeEditModal() {
-    //
-    // $('#myModal').on('hidden.bs.modal', function () {
-    //     $("#tableBody1").empty();
-    //     $("#button-delete").empty();
-    //     // do something…
-    //     getUserTable();
-    // });
-    //
-    //
-    // // $("#myModal").close();
-    // // $("#myModal").style.display = 'none';
-    // // $("#myModal").style.display = '';
 
     $("#myModal").modal('toggle');
     $("#tableBody1").empty();
@@ -80,8 +66,8 @@ function closeEditModal() {
 function showTab() {
     $("#tableBody1").empty();
     $("#button-delete").empty();
-        $("#table").tab('show');
-       getUserTable();
+    $("#table").tab('show');
+    getUserTable();
 }
 
 $('#deleteForm').submit(function (e) { // Устанавливаем событие отправки для формы с id=form
@@ -120,7 +106,9 @@ function addUser() {
         }
 
     });
-    setTimeout(() => { showTab(); }, 200);
+    setTimeout(() => {
+        showTab();
+    }, 200);
 
 }
 
@@ -142,14 +130,16 @@ function sendEditForm() {
         data: myJson,
         contentType: 'application/json',
 
-        success: function() {
-                // if (data != "") {
-                    alert("пользователь изменен");
-                // } else {
+        success: function () {
+            // if (data != "") {
+            alert("пользователь изменен");
+            // } else {
             // closeEditModal().delay(100);
 
         }
     });
-    setTimeout(() => { closeEditModal(); }, 200);
+    setTimeout(() => {
+        closeEditModal();
+    }, 200);
 
 }

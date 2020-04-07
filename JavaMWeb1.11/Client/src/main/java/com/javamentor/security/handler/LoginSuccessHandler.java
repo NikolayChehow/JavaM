@@ -1,4 +1,4 @@
-package com.javamentor.handler;
+package com.javamentor.security.handler;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

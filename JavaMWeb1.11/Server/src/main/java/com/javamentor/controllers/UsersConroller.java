@@ -9,11 +9,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/admin", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -25,23 +23,37 @@ public class UsersConroller {
 
     @PutMapping("/addUser")
     public ResponseEntity<Object> addUser(@RequestBody UserForm userForm) {
-
-        usersService.save(userForm);
-        return ResponseEntity.ok().build();
+        boolean result = usersService.save(userForm);
+        if (result) {
+            return ResponseEntity.ok().build();
+        } else return ResponseEntity.notFound().build();
     }
+//    @GetMapping("/allUsers")
+//    public List<UserDto> getAllUsers() {
+//        return UserDto.from(usersService.findAll());
+//    }
 
     @GetMapping("/allUsers")
-    public List<UserDto> getAllUsers() {
-
-        return UserDto.from(usersService.findAll());
-
+    public ResponseEntity<List<UserDto>> getAllUsers() {
+        List<User> list = usersService.findAll();
+        if (list!=null) {
+            return ResponseEntity.ok(UserDto.from(list));
+        } else return ResponseEntity.notFound().build();
     }
 
+
+//    @GetMapping("/getUser/{email}")
+//    public User getUserByEmail(@PathVariable String email) {
+//        return usersService.findOneByEmail(email);
+//    }
+
     @GetMapping("/getUser/{email}")
-    public User getUserByEmail(@PathVariable String email) {
-
-        return usersService.findOneByEmail(email);
-
+    public ResponseEntity<User> getUserByEmail(@PathVariable String email) {
+        User user = usersService.findOneByEmail(email);
+        if (user != null) {
+            return ResponseEntity.ok((user));
+            //        return new ResponseEntity<>(usersService.findOneByEmail(email), HttpStatus.BAD_REQUEST);
+        } else return ResponseEntity.notFound().build();
     }
 
 

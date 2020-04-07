@@ -33,17 +33,20 @@ public class UsersService {
         return usersRepository.findOneByEmail(email);
     }
 
-    public void save(UserForm userForm) {
+    public boolean save(UserForm userForm) {
         String hashPassword = passwordEncoder.encode(userForm.getPassword());
-        User user = User.builder()
-                .firstName(userForm.getFirstName())
-                .lastName(userForm.getLastName())
-                .email(userForm.getEmail())
-                .password(hashPassword)
-                .role(userForm.getRole())
-                .state(userForm.getState())
-                .build();
-        usersRepository.save(user);
+        if (findOneByEmail(userForm.getEmail())==null) {
+            User user = User.builder()
+                    .firstName(userForm.getFirstName())
+                    .lastName(userForm.getLastName())
+                    .email(userForm.getEmail())
+                    .password(hashPassword)
+                    .role(userForm.getRole())
+                    .state(userForm.getState())
+                    .build();
+            usersRepository.save(user);
+            return true;
+        } else return false;
     }
 
     public void save(User user) {

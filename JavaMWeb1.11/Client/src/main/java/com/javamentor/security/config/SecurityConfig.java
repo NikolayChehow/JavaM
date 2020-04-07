@@ -1,6 +1,6 @@
 package com.javamentor.security.config;
 
-import com.javamentor.handler.LoginSuccessHandler;
+import com.javamentor.security.handler.LoginSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
@@ -47,7 +47,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .successHandler(new LoginSuccessHandler())
                 .usernameParameter("email")
-                .defaultSuccessUrl("/")
+//                .defaultSuccessUrl("/")
                 .loginPage("/login");
 
         http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
