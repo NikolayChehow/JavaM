@@ -9,7 +9,7 @@
     <version>0.1</version>
     <packaging>war</packaging>
     <properties>
-        <org.hibernate.hibernate-core.version>5.2.16.Final</org.hibernate.hibernate-core.version>
+        <org.hibernate.hibernate-core.version>5.4.24.Final</org.hibernate.hibernate-core.version>
     </properties>
 
     <build>
